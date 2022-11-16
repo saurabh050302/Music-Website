@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.2em;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav_bar {
+    min-width: 100%;
+    margin: 0px auto;
+    padding: 20px 100px;
+
+    background-color: #270082;
+    color: white;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.3);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.nav_bar h3 {
+    font-size: 2rem;
+}
+
+.nav_menu {
+    font-size: 1.5rem;
+
+    display: flex;
+    gap: 20px;
+}
+
+.nav_menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav_menu li {
+    list-style-type: none;
+    border-bottom: 1px solid transparent;
+    transition: 0.2s ease-in-out;
+}
+
+.nav_menu li:hover {
+    border-bottom: 1px solid white;
+    transition: 0.2s ease-in-out;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    /* padding: 50px; */
+}
+
+.hero_section {
+    height: 100vh;
+
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/hero_image.png");
+
+    color: white;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* display: grid;
+    place-items: center; */
+}
+
+.hero_section * {
+    margin: 10px;
+    max-width: 1200px;
+}
+
+.hero_section h1 {
+    font-size: 5rem;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.2);
+}
+
+.hero_section h4 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.hero_section p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.music_section {
+    max-height: 100%;
+    /* padding: 100px 0px; */
+    background-color: #281154;
+    color: white;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.music_section * {
+    margin: 10px;
+    max-width: 1200px;
+}
+
+.music_tag {
+    font-size: 3rem;
+    margin-top: 100px;
+
+}
+
+.music_subhead {
+    font-size: 1.8rem;
+}
+
+.music_section P {
+    font-size: 1.5rem;
+}
+
+.btn {
+    padding: 20px 30px;
+    font-size: 1.4rem;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.music_section span {
+    margin-bottom: 50px;
+}
+
+.orange_btn {
+    background-color: #DC0000;
+}
+
+.ipad_img_container {
+    margin-top: -400px;
+    position: relative;
+    top: 400px;
+}
+
+.music_section h4 {
+    margin-top: 400px;
+    color: black;
+    font-size: 1.8rem;
+}
+
+.black_text {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.blue_btn {
+    background-color: #37008E;
+}
+
+.video_section {
+    height: 100%;
+    margin-top: 1500px;
+
+    color: white;
+    text-align: center;
+
+    background-image: url(images/video.png);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* 
+.video_section video{
+    width: 100%;
+    height: 100%;
+} */
+
+.video_section * {
+    margin: 0px 10px;
+    max-width: 1200px;
+}
+
+.video_section h3 {
+    font-size: 1.8rem;
+}
+
+.video_section p {
+    font-size: 1.5rem;
+}
+
+.gift_section {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 100px 10px;
+
+    display: flex;
+    gap: 40px;
+}
+
+.gift_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.gift_content h3 {
+    font-size: 1.8rem;
+}
+
+.gift_content p {
+    font-size: 1.5rem;
+}
+
+.footer {
+    padding: 50px;
+    color: white;
+    background-color: #1B0058;
+
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.footer li {
+    list-style: none;
+    /* letter-spacing: 1px; */
+}
+
+.list_head {
+    margin-bottom: 10px;
+
+    border-bottom: 1px solid white;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.footer_bottom {
+    padding: 20px;
+
+    color: white;
+    background-color: #270082;
+
+    font-size: 1.2rem;
+    /* font-weight: 400; */
+    text-align: center;
+}
+
+@media (max-width : 400px) {
+
+    html,
+    body {
+        font-size: 8px;
+    }
+
+    .nav_bar {
+        padding: 20px;
+    }
+
+    .nav_menu {
+        gap: 10px;
+    }
+
+    .hero_section {
+        gap: 0px;
+    }
+
+    .music_section {
+        height: 70%;
+        gap: 10px;
+
+    }
+
+    .btn {
+        padding: 15px 20px;
+    }
+
+    .ipad_img_container img,
+    .mac_img_container img,
+    .gift_img img {
+        margin: 0;
+        width: 100%;
+
+    }
+
+    .video_section {
+        margin-top: 700px;
+    }
+
+    .gift_section {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 75px;
+    }
+
+    .gift_content {
+        gap: 15px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer {
+        padding: 20px;
+        font-size: 1.2rem;
+
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
